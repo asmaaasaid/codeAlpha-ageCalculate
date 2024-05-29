@@ -1,0 +1,114 @@
+:root
+{
+    --main-bgColor:#F0F0F0;
+    --date-color:#888888;
+    --text-color:#828282;
+    --white-color:#ffffff;
+    --dark-color:#000000;
+    --blue-color:#864CFF;
+    --main-font-family:"Heebo", sans-serif;
+}
+*
+{
+    font-family: var(--main-font-family);
+}
+.main-section
+{
+    background-color: var(--main-bgColor);
+}
+input::placeholder
+{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--date-color);
+}
+label
+{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 12px;
+}
+.empty-div:empty
+{
+    /* padding: 0.1em 0px; */
+    background-color: #ECECEC;
+    height: 0.2vh;
+    width: 90%;
+}
+.icon-div
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transition: all 0.5s;
+    border: none;
+    padding: 8px;
+}
+.icon-div img
+{
+    width: 100%;
+}
+.box-of-date
+{
+    border-top-left-radius: 1.1em;
+    border-top-right-radius: 1.1em;
+    border-bottom-left-radius: 1.1em;
+    border-bottom-right-radius: 12em;
+}
+.age-detail h2{
+    font-size: 4em;
+}
+.age-detail h2 span
+{
+    color: var(--blue-color);
+}
+.icon-div:hover 
+{
+    background-color: rgba(154, 107, 255, 0.9) ;
+    cursor: pointer;
+    border: none !important;
+}
+@media screen and (max-width: 1169px) {
+    .box-of-date
+    {
+        width: 90% !important;
+    }
+     .age-detail h2{
+        font-size: 1.5em;
+    }
+    .icon-div
+    {
+        width: 35px;
+        height: 35px;
+        padding: 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .icon-div img {
+        width: 90%;
+    }
+    .input::placeholder
+    {
+        font-size: 5px;
+        font-weight: 100;
+    }
+    .box-of-date
+    {
+        border-bottom-right-radius: 5em;
+    }
+}
+.alert
+{
+    text-transform: capitalize;
+    background-color: var(--white-color);
+}
+.alert button
+{
+    background-color: rgb(218, 67, 67) !important;
+    border: none !important;
+    font-family: var(--main-font-family);
+}

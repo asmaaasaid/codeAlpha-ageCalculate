@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calc</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+   
+    
+    <section class="main-section vh-100 container-fluid d-flex justify-content-center align-items-center ">
+       <div class="box-of-date w-50 bg-white p-5 my-3 ">
+        <div class="row  mb-4">
+            <div class="col-4 col-lg-3">
+                <label  class="form-label text-uppercase" for="inputDay">day</label>
+                <input type="number" class="form-control py-2" id="inputDay" placeholder="dd" >
+                <small class=" text-danger error-day"></small>
+            </div>
+            <div class="col-4   col-lg-3">
+                <label  class="form-label text-uppercase " for="inputMonth">month</label>
+                <input type="number" class="form-control py-2" id="inputMonth" placeholder="mm" >
+                <small class=" text-danger error-month"></small>
+            </div>
+            <div class="col-4  col-lg-3">
+                <label  class="form-label text-uppercase " for="inputYear">year</label>
+                <input type="number" class="form-control py-2" id="inputYear" placeholder="yyyy" >
+                <small class=" text-danger error-year"></small>
+            </div>
+        </div>
+        <div class="row mb-4 justify-content-center align-items-center position-relative">
+            <div class="empty-div "></div>
+            <button type="submit" class=" icon-div d-flex justify-content-center align-items-center" id="submitBtn">
+                <img src="image/icon-arrow.svg" alt="arrow icon">
+            </button>
+        </div>
+        
+            <div class="age-detail d-flex  align-items-center ">
+                <h2 class="fw-bolder fst-italic"><span id="outputYear">--</span> years</h2>
+            </div>
+            <div class="age-detail d-flex  align-items-center ">
+                <h2 class="fw-bolder fst-italic"><span id="outputMonth">--</span> months</h2>
+            </div>
+            <div class="age-detail d-flex  align-items-center ">
+                <h2 class="fw-bolder fst-italic"><span id="outputDay">--</span> days</h2>
+            </div>
+        
+       </div>
+    </section>
+    <script src="JS/sweetalert.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
